@@ -14,7 +14,7 @@ interface HistoryShrinkableButtonProps {
 function HistoryShrinkableButton({ref1, ref2, chatPage, shrink, setShrink, handleMouseEnter, handleMouseLeave}: HistoryShrinkableButtonProps) {
   return (
     <div
-      className={`fixed left-0 top-1/2 z-40 transform translate-x-[320px] -translate-y-1/2 transition-all duration-300 ease-in-out 
+      className={`fixed left-0 top-1/2 z-40 transform translate-x-[325px] -translate-y-1/2 transition-all duration-300 ease-in-out 
         ${shrink && "translate-x-[3px]"}`}
     >
       <button onMouseEnter={(e) => handleMouseEnter(e)}

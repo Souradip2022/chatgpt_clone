@@ -17,11 +17,8 @@ function UserText(): React.JSX.Element {
     setValue(e.target.value); // Update the state with the new value
     if (newValue.trim() !== "") setDisabled(false); // Enable button if newValue is not just whitespace
     else setDisabled(true); // Disable button if newValue is empty or just whitespace
-
-
     // console.log(newValue.length)
   }
-
 
   return (
     <>
