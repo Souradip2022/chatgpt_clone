@@ -23,7 +23,7 @@ function ChatSection({shrink, setShrink, smScreenHistory, setSmScreenHistory}: C
   const ref2 = useRef<HTMLDivElement>(null);
   const chatPage = useRef<HTMLDivElement>(null);
 
-  const [iconSize, setIconSize] = React.useState<number>(window.innerWidth >= 1024 ? 24 : 30);
+  const [iconSize, setIconSize] = React.useState<number>(30);
 
 
   useEffect(() => {
