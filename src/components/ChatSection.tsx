@@ -29,7 +29,7 @@ function ChatSection({shrink, setShrink, smScreenHistory, setSmScreenHistory}: C
   useEffect(() => {
 
     const handleResize = () => {
-      setIconSize(window.innerWidth >= 1024 ? 24 : 30);
+      setIconSize(() => window.innerWidth >= 1024 ? 24 : 30);
     };
     window.addEventListener('resize', handleResize);
 

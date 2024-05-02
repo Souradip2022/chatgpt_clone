@@ -3,9 +3,7 @@ import React from 'react';
 import {RiOpenaiFill} from "react-icons/ri";
 import {MdOutlineOpenInNew} from "react-icons/md";
 import Link from "next/link";
-import conversationData from "@/data/conversation.json";
-
-// console.log(conversationData);
+import ChatHeadingSection from "@/components/sub_components/ChatHeadingSection";
 
 interface HistoryChatSectionProps {
   shrink: boolean;
@@ -33,6 +31,7 @@ function HistoryChatSection({shrink, smScreenHistory}: HistoryChatSectionProps) 
               </div>
             </Link>
           </div>
+          <ChatHeadingSection/>
         </div>
       </nav>
     </div>
